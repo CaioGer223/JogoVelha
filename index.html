@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="src/img/FavIcon.ico" type="image/x-icon">
+    <script defer src="src/script.js"></script>
+</head>
+<body onselectstart="return false" oncontextmenu="return false">
+    <div class="container">
+        <h2>Bem vindo ao Jogo da Velha</h2>
+        <p id="data"></p>
+    </div>
+
+    <div id="area">
+        <table>
+            <tr>
+                <td class="cell td_Direita td_top"><button id="1" value="1" onclick="jogar('1')"></button></td>
+                <td class="cell td_top"><button id="2" value="2" onclick="jogar('2')"></button></td>
+                <td class="cell td_top"><button id="3" value="3" onclick="jogar('3')"></button></td>
+            </tr>
+            <tr>
+                <td class="cell td_Direita"><button id="4" value="4" onclick="jogar('4')"></button></td>
+                <td class="cell"><button id="5" value="5" onclick="jogar('5')"></button></td>
+                <td class="cell"><button id="6" value="6" onclick="jogar('6')"></button></td>
+            </tr>
+            <tr>
+                <td class="cell td_Direita"><button id="7" value="7" onclick="jogar('7')"></button></td>
+                <td class="cell"><button id="8" value="8" onclick="jogar('8')"></button></td>
+                <td class="cell"><button id="9" value="9" onclick="jogar('9')"></button></td>
+            </tr>
+        </table>
+        <button class="button" onclick="location.reload()">Reset</button>
+    </div>
+</body>
+</html>

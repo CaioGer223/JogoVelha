@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(img/Fundo.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    top: -350px;
+    left: 738px;
+    text-align: center;
+    background: #fff8dc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    color: #8b4513;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+#area {
+    position: relative;
+    left: -222px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+#area table {
+    border-spacing: 0;
+    margin: auto;
+    background: #deb887;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cell {
+    border: 2px solid #8b4513;
+    width: 100px;
+    height: 100px;
+    background: #fff8dc;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    background: #fff8dc;
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: #8b4513;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #8b4513;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.button {
+    background: #8b4513;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #a0522d;
+}
+
+#data {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.486);
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    transition: opacity 0.5s;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #8b4513, 0 0 10px #8b4513;
+    }
+    to {
+        text-shadow: 0 0 20px #8b4513, 0 0 40px #8b4513;
+    }
+}
